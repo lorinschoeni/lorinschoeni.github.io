@@ -1,0 +1,7 @@
+title: "Lorin Schöni"
+description: "Doctoral researcher in human-centred cybersecurity at ETH Zurich"
+url: "https://lorinschoeni.github.io"
+theme: minima
+header_pages:
+  - index.md
+  - publications.md

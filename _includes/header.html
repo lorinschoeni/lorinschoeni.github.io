@@ -1,0 +1,25 @@
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+      <label for="nav-trigger">
+        <span class="menu-icon" aria-hidden="true">☰</span>
+      </label>
+
+      <div class="trigger">
+        {%- for path in site.header_pages -%}
+          {%- assign my_page = site.pages | where: "path", path | first -%}
+          {%- if my_page.title -%}
+            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          {%- endif -%}
+        {%- endfor -%}
+
+        <a class="page-link" href="mailto:lorin.schoeni@gess.ethz.ch" aria-label="Email" title="Email">✉</a>
+        <a class="page-link" href="https://scholar.google.com/citations?hl=en&user=LK-tBo4AAAAJ" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar" title="Google Scholar">🎓</a>
+        <a class="page-link" href="https://www.linkedin.com/in/lorin-sch%C3%B6ni/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">in</a>
+      </div>
+    </nav>
+  </div>
+</header>
