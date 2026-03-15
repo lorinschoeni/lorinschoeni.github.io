@@ -55,7 +55,7 @@ body {
 
 .profile-frame {
   justify-self: end;
-  width: min(100%, 300px);
+  width: min(100%, 260px);
   border-radius: 14px;
   overflow: hidden;
   border: 1px solid #cfd9ea;
@@ -74,6 +74,7 @@ body {
 .section-title {
   margin-top: 0;
   margin-bottom: 0.9rem;
+  text-align: center;
 }
 
 .research-grid {
@@ -97,10 +98,12 @@ body {
 
 .research-card img {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+  height: 160px;
+  object-fit: contain;
   object-position: 50% 50%;
   display: block;
+  padding: 0.35rem;
+  background: #f8faff;
   border-bottom: 1px solid var(--line);
 }
 
@@ -126,6 +129,26 @@ body {
   margin: 0;
   color: var(--muted);
   font-size: 0.96rem;
+}
+
+.site-footer {
+  padding: 0.85rem 0;
+}
+
+.site-footer .footer-heading {
+  font-size: 1rem;
+  margin-bottom: 0.35rem;
+}
+
+.site-footer .contact-list .p-name {
+  display: none;
+}
+
+.site-footer .footer-col-wrapper,
+.site-footer .footer-col-wrapper p,
+.site-footer .social-media-list {
+  font-size: 0.9rem;
+  margin-bottom: 0.2rem;
 }
 
 @media (max-width: 900px) {
